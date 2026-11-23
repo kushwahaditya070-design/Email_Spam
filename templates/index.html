@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#faf9f6">
+
+    <title>Postmark — Email Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="topbar">
+
+    <a class="brand" href="#">
+        <span class="brand-mark">p.</span>
+        postmark<span class="brand-dot">.</span>
+    </a>
+
+    <nav>
+        <a href="#about">The idea</a>
+        <a href="#how">How it works</a>
+        <a class="nav-cta" href="#studio">
+            Try the detector <span>↗</span>
+        </a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="hero-copy">
+
+        <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            A LITTLE CLARITY FOR YOUR INBOX
+        </div>
+
+        <h1>
+            Your inbox.<br>
+            <em>Your intelligence.</em>
+        </h1>
+
+        <p class="hero-lede">
+            A thoughtful little tool that helps tell the wanted
+            messages from the noise — powered by machine learning,
+            made for humans.
+        </p>
+
+        <div class="hero-actions">
+
+            <a class="button primary" href="#studio">
+                Detect an email <span>↗</span>
+            </a>
+
+            <a class="text-link" href="#about">
+                Explore the idea ↓
+            </a>
+
+        </div>
+
+        <div class="hero-note">
+            <span class="tiny-star">✳</span>
+            YOUR EMAIL STAYS IN THIS SESSION. NOTHING IS SENT.
+        </div>
+
+    </div>
+
+
+    <!-- ORBITAL DOODLE ILLUSTRATION -->
+
+    <div class="hero-art orbit-art">
+
+        <!-- Circular orbit paths -->
+
+        <div class="orbit orbit-one">
+            <div class="orbit-item counter-one">
+                <svg viewBox="0 0 70 70">
+                    <path d="M22 8 C5 8 5 28 22 28 L43 28 C61 28 61 8 43 8 L25 8 C12 8 12 21 25 21 L43 21"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="orbit orbit-two">
+            <div class="orbit-item counter-two">
+                <svg viewBox="0 0 70 70">
+                    <path d="M35 9 C18 9 10 21 13 36 C16 51 37 53 47 41 C57 28 49 12 35 9Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"/>
+
+                    <path d="M37 24 C26 19 18 33 28 39 C37 44 46 32 40 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"/>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="orbit orbit-three">
+            <div class="orbit-item counter-three">
+                <svg viewBox="0 0 80 65">
+
+                    <path d="M9 18 L40 3 L71 18 L71 55 L9 55 Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          stroke-linejoin="round"/>
+
+                    <path d="M9 18 L40 40 L71 18 M9 55 L31 34 M71 55 L49 34"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          stroke-linejoin="round"/>
+
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="orbit orbit-four">
+            <div class="orbit-item counter-four">
+                <svg viewBox="0 0 75 65">
+
+                    <path d="M5 33 L66 7 L49 57 L34 39 Z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          stroke-linejoin="round"/>
+
+                    <path d="M34 39 L66 7"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"/>
+
+                </svg>
+            </div>
+        </div>
+
+
+        <!-- CENTRAL ENVELOPE -->
+
+        <div class="orbit-center">
+
+            <svg viewBox="0 0 180 150"
+                 class="center-envelope">
+
+                <rect x="20" y="25"
+                      width="140"
+                      height="100"
+                      rx="9"
+                      fill="#fffdf9"
+                      stroke="#292929"
+                      stroke-width="3"/>
+
+                <path d="M23 31 L90 82 L157 31"
+                      fill="none"
+                      stroke="#292929"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+
+                <path d="M23 120 L69 76 M157 120 L111 76"
+                      fill="none"
+                      stroke="#292929"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+                <path d="M65 95 Q90 115 115 95"
+                      fill="none"
+                      stroke="#e9a5c3"
+                      stroke-width="2.5"
+                      stroke-linecap="round"/>
+
+                <path d="M76 60 Q90 47 104 60"
+                      fill="none"
+                      stroke="#e9a5c3"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+            </svg>
+
+            <span class="center-spark">✳</span>
+
+        </div>
+
+
+        <!-- SMALL DECORATIVE STARS -->
+
+        <span class="orbit-star star-one">✳</span>
+        <span class="orbit-star star-two">+</span>
+        <span class="orbit-star star-three">✳</span>
+
+        <div class="art-caption">
+            A calmer corner of the internet
+            <span>✳</span>
+        </div>
+
+    </div>
+
+
+    <div class="hero-index">
+        01 <span>/</span> 04
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="intro section" id="about">
+
+    <div class="section-tag">01 — THE IDEA</div>
+
+    <div class="intro-grid">
+
+        <h2>
+            Not every email<br>
+            deserves your <em>attention.</em>
+        </h2>
+
+        <div>
+
+            <p>
+                Spam can be noisy, deceptive, and occasionally
+                dangerous. Postmark uses a trained text-classification
+                model to spot patterns that distinguish unwanted
+                messages from ordinary email.
+            </p>
+
+            <p class="muted">
+                It's a learning project, not a replacement for your
+                email provider's security filters. Always treat
+                unexpected links and attachments with care.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DETECTOR SECTION ================= -->
+
+<section class="studio-wrap" id="studio">
+
+    <div class="section-tag">02 — THE DETECTOR</div>
+
+    <div class="studio-head">
+
+        <div>
+
+            <h2>
+                Give it a <em>read.</em>
+            </h2>
+
+            <p>
+                Paste an email below. We'll ask the model what it thinks.
+            </p>
+
+        </div>
+
+        <span class="live-pill">
+            <i></i> MODEL READY
+        </span>
+
+    </div>
+
+
+    <div class="mail-app">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="app-side">
+
+            <div class="side-brand">
+                <span class="brand-mark small">p.</span>
+                <span>postmark</span>
+            </div>
+
+            <div class="side-label">WORKSPACE</div>
+
+            <a class="side-item active" href="#studio">
+                <span>✎</span>
+                Analyze email
+            </a>
+
+            <a class="side-item" href="#how">
+                <span>↗</span>
+                How it works
+            </a>
+
+            <a class="side-item" href="#analytics">
+                <span>▥</span>
+                Model insights
+            </a>
+
+            <div class="side-bottom">
+
+                <span class="avatar">P</span>
+
+                <div>
+                    <b>Private session</b>
+                    <small>Your text isn't stored</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- EMAIL COMPOSER -->
+
+        <section class="compose-panel">
+
+            <div class="panel-top">
+
+                <div>
+                    <span class="panel-kicker">NEW ANALYSIS</span>
+                    <h3>Compose a test</h3>
+                </div>
+
+                <span class="draft-label">LOCAL INPUT</span>
+
+            </div>
+
+
+            <label class="field-label" for="subject">
+                SUBJECT <span>OPTIONAL</span>
+            </label>
+
+            <input
+                id="subject"
+                class="subject-input"
+                type="text"
+                maxlength="500"
+                placeholder="A subject line, if there is one..."
+            >
+
+
+            <div class="editor-toolbar">
+                <span>MESSAGE CONTENT</span>
+                <span class="toolbar-right">PLAIN TEXT ONLY</span>
+            </div>
+
+            <textarea
+                id="message"
+                maxlength="50000"
+                placeholder="Paste the email text here. You can include the sender's message, links as text, and any suspicious wording..."
+            ></textarea>
+
+
+            <div class="editor-foot">
+
+                <span id="char-count">0 characters</span>
+
+                <button id="clear-btn" class="clear-btn">
+                    Clear text ↺
+                </button>
+
+            </div>
+
+
+            <div class="sample-row">
+
+                <span>TRY AN EXAMPLE</span>
+
+                <button class="sample" data-sample="spam">
+                    Suspicious offer
+                </button>
+
+                <button class="sample" data-sample="ham">
+                    Ordinary note
+                </button>
+
+            </div>
+
+
+            <button class="analyze-btn" id="analyze-btn">
+
+                <span>Analyze email</span>
+                <span class="btn-arrow">↗</span>
+
+            </button>
+
+            <p class="privacy-note">
+                Your text is processed by the local Flask app
+                and is not saved to a database.
+            </p>
+
+        </section>
+
+
+        <!-- RESULT PANEL -->
+
+        <aside class="result-panel">
+
+            <div class="result-top">
+
+                <span class="panel-kicker">MODEL RESPONSE</span>
+                <span class="result-icon">✳</span>
+
+            </div>
+
+
+            <div id="result-empty" class="empty-state">
+
+                <div class="empty-doodle">✉</div>
+
+                <h3>Waiting for a message</h3>
+
+                <p>
+                    Your result will appear here once the model
+                    has had a look.
+                </p>
+
+                <span class="empty-rule"></span>
+
+                <small>NO PREDICTION YET</small>
+
+            </div>
+
+
+            <div id="result-content" class="result-content hidden">
+
+                <div id="result-symbol" class="result-symbol">
+                    ✓
+                </div>
+
+                <div id="result-label" class="result-label">
+                    NOT SPAM
+                </div>
+
+                <h3 id="result-title">
+                    Looks like a regular email.
+                </h3>
+
+                <p id="result-description"></p>
+
+
+                <div class="confidence-box">
+
+                    <div class="confidence-head">
+                        <span>MODEL CONFIDENCE</span>
+                        <b id="confidence-value">—</b>
+                    </div>
+
+                    <div class="meter">
+                        <span id="confidence-meter"></span>
+                    </div>
+
+                    <small>
+                        Probability estimate from the trained classifier.
+                    </small>
+
+                </div>
+
+
+                <div class="result-meta">
+
+                    <span>CHARACTERS ANALYZED</span>
+                    <b id="result-length">—</b>
+
+                </div>
+
+
+                <button id="analyze-again" class="again-btn">
+                    Analyze another email ↗
+                </button>
+
+            </div>
+
+
+            <div id="error-box"
+                 class="error-box hidden"
+                 role="alert">
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how section" id="how">
+
+    <div class="section-tag">03 — UNDER THE HOOD</div>
+
+    <h2>
+        A small journey<br>
+        from text to <em>signal.</em>
+    </h2>
+
+
+    <div class="steps">
+
+        <article>
+
+            <span>01</span>
+            <div class="step-icon">✎</div>
+
+            <h3>Enter the email</h3>
+
+            <p>
+                Subject and message are combined as plain text
+                for analysis.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>02</span>
+            <div class="step-icon">⌁</div>
+
+            <h3>Text preparation</h3>
+
+            <p>
+                Whitespace is trimmed and text is lowercased,
+                matching the notebook's cleaning step.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>03</span>
+            <div class="step-icon">▦</div>
+
+            <h3>TF-IDF features</h3>
+
+            <p>
+                The saved TF-IDF vectorizer transforms the
+                message using its learned vocabulary.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>04</span>
+            <div class="step-icon">✳</div>
+
+            <h3>Classification</h3>
+
+            <p>
+                The saved Logistic Regression model predicts
+                Ham (0) or Spam (1).
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ANALYTICS ================= -->
+
+<section class="analytics section" id="analytics">
+
+    <div class="section-tag">04 — MODEL NOTES</div>
+
+    <div class="analytics-head">
+
+        <h2>
+            What the model<br>
+            has <em>learned.</em>
+        </h2>
+
+        <p>
+            Evaluation figures below are taken from the uploaded
+            notebook's held-out test set (1,035 emails), not
+            generated live.
+        </p>
+
+    </div>
+
+
+    <div class="metric-grid">
+
+        <div class="metric">
+            <small>TEST ACCURACY</small>
+            <b>97.87<sup>%</sup></b>
+            <span>1,013 / 1,035 correct</span>
+        </div>
+
+        <div class="metric">
+            <small>PRECISION</small>
+            <b>95.42<sup>%</sup></b>
+            <span>Spam predictions</span>
+        </div>
+
+        <div class="metric">
+            <small>RECALL</small>
+            <b>97.33<sup>%</sup></b>
+            <span>Spam detected</span>
+        </div>
+
+        <div class="metric">
+            <small>F1 SCORE</small>
+            <b>96.37<sup>%</sup></b>
+            <span>Harmonic mean</span>
+        </div>
+
+    </div>
+
+
+    <div class="chart-card">
+
+        <div>
+            <h3>Confusion matrix</h3>
+            <p>
+                Held-out test results · rows = actual,
+                columns = predicted
+            </p>
+        </div>
+
+
+        <div class="matrix">
+
+            <div></div>
+            <b>Pred. Ham</b>
+            <b>Pred. Spam</b>
+
+            <b>Actual Ham</b>
+            <strong>721</strong>
+            <strong class="bad">14</strong>
+
+            <b>Actual Spam</b>
+            <strong class="bad">8</strong>
+            <strong>292</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="model-foot">
+
+        <span>
+            ALGORITHM
+            <b>Logistic Regression</b>
+        </span>
+
+        <span>
+            VECTORIZER
+            <b>TF-IDF · 1,000 features</b>
+        </span>
+
+        <span>
+            TRAIN / TEST
+            <b>80% / 20%</b>
+        </span>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <a class="brand" href="#">
+        <span class="brand-mark">p.</span>
+        postmark<span class="brand-dot">.</span>
+    </a>
+
+    <span>
+        Made for a little more clarity. <i>✳</i>
+    </span>
+
+    <span>
+        ML learning project · not a security guarantee
+    </span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
